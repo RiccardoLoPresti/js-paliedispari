@@ -9,9 +9,24 @@ const userEvenOdd = document.querySelector('select');
 const numberInput = document.querySelector('input');
 const btn = document.querySelector('button');
 
- btn.addEventListener('click', function(){
-  sommaNumber(2,2);
-  paridispari(somma);
+
+
+btn.addEventListener('click', function(){
+  const numberUser = parseInt((numberInput.value)) ;
+  const numberCpu = Math.ceil(Math.random() * 5);
+
+  console.log('numberUser', numberUser);
+  console.log('numberCpu', numberCpu);
+  
+  
+  const total = sommaNumber(numberUser, numberCpu);
+
+  sommaNumber(numberUser,numberCpu);
+  console.log('questa è la somma', total);
+
+  paridispari(total);
+
+  
  })
 
 
@@ -22,9 +37,10 @@ const btn = document.querySelector('button');
  }
 
  function paridispari(number){
-  if(number.value % 2 === 0){
-    console.log('numero è dispari');
-  }else{
+  if(number % 2 === 0){
     console.log('numero è pari');
+
+  }else{
+    console.log('numero è dispari');
   }
  }
