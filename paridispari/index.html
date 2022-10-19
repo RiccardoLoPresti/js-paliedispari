@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css' integrity='sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>paridispari</title>
+</head>
+<body>
+
+  <header>
+    <div class="container text-center text-white text-uppercase mt-2">
+      <h1>paridispari</h1>
+    </div>
+  </header>
+
+  <div class="container customcontainer mt-5">
+    <div class="row">
+      <div class="col-4">
+        <label class="form-label mt-3 fw-bold">Scegli pari o dispari</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected value="1">Pari</option>
+          <option value="2">Dispari</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <div class="mb-3">
+          <label class="form-label mt-3 fw-bold">Inserisci un numero da 1 a 5</label>
+          <input type="number" class="form-control" value="" placeholder="Inserisci un numero da 1 a 5">
+        </div>
+      </div>
+      <div class="col-4">
+        <h2>Il vincitore è:</h2>
+        <h6></h6>
+      </div>
+      <button type="button" class="btn btn-outline-dark mt-3 w-100">GIOCA</button>
+    </div>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
